@@ -440,7 +440,7 @@ def main():
         exit()
     else:
         try:
-            client = wolframalpha.Client('9Y9LER-PRJLJJ4H7Q')
+            client = wolframalpha.Client('<api>')
             res = client.query(query)
             output = next(res.results).text
             speak(output)
